@@ -1,0 +1,74 @@
+.usage {
+
+    .title::after {
+        margin: 15px auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__wrapper {
+        margin-top: 25px;
+        padding: 0 50px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 417px));
+        column-gap: 120px;
+    }
+    h3.title {
+        margin-top: 18px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: $secondcolor;
+    }
+    &__column {
+        ul {
+            list-style-type: none;
+            padding-left: 47px;
+            li {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -40px;
+                    width: 1px;
+                    height: 100%;
+                    background-color: $maincolor;
+                }
+                .items_title {
+                    line-height: 40px;
+                    padding-left: 12px;
+                    white-space: nowrap;
+                }
+
+            }
+        }
+    }
+    &__item {
+        padding-top: 40px;
+    }
+    &__item-text {
+        margin-top: 12px;
+    }
+    &__item-head {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        &::before {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 1px;
+            background-color: $maincolor;
+            position: absolute;
+            top: calc(50% - 2px);
+            left: -40px;
+        }
+    }
+}

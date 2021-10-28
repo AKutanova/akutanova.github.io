@@ -5,8 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Анна Кутанова - web-разработчик, город Москва</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <div class="menu">
+        <div class="menu__block">
+            <ul class="menu__items">
+                <li><a href='#' >Про меня</a></li>
+                <li><a href='#' >Опыт</a></li>
+                <li><a href='#' >Навыки</a></li>
+                <li><a href='#' >Мои работы</a></li>
+                <li><a href='#' >Прайс-лист</a></li>
+                <li><a href='#' >Контакты</a></li>
+            </ul>
+        </div>
+        <div class="menu__overlay"></div>  
+    </div>
+
+    <section class="promo">
+        <div class="hamburger">
+            <span class="first"></span>
+            <span class="long"></span>
+            <span class="second"></span>
+        </div>
     
+        <aside class="socpanel">
+            <div class="socpanel__text">Социальные сети</div>
+            <div class="socpanel__devider"></div>
+            <a href="#" class="socpanel__link">
+                <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 60 60" xml:space="preserve"><desc>Telegram</desc>
+                    <path style="" d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z"></path>
+                    <path style="" d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"></path>
+                    </svg>
+            </a>
+            <a href="#" class="socpanel__link">
+                <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 30 30" xml:space="preserve"><desc>Instagram</desc>
+                    <path style="" d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z"></path>
+                    <path style="" d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z"></path>
+                    <path style="" d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z"></path>
+                    </svg>
+            </a>
+            <a href="#" class="socpanel__link">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 0C14.32 0 0 14.692 0 32.812C0 47.312 9.168 59.6082 21.88 63.9434C23.48 64.2523 24.0667 63.2366 24.0667 62.3657C24.0667 61.5866 24.04 59.5219 24.0267 56.7866C15.1253 58.765 13.248 52.3846 13.248 52.3846C11.792 48.5975 9.688 47.5847 9.688 47.5847C6.78933 45.5506 9.912 45.5924 9.912 45.5924C13.1253 45.8205 14.8133 48.9732 14.8133 48.9732C17.6667 53.9902 22.304 52.5404 24.1333 51.7029C24.4213 49.5798 25.2453 48.1356 26.16 47.3148C19.0533 46.4939 11.584 43.6724 11.584 31.1008C11.584 27.5196 12.824 24.5923 14.8773 22.2967C14.5173 21.4675 13.4373 18.1312 15.1573 13.6123C15.1573 13.6123 17.8373 12.733 23.9573 16.9764C26.5173 16.2474 29.2373 15.8857 31.9573 15.869C34.6773 15.8857 37.3973 16.2474 39.9573 16.9764C46.0373 12.733 48.7173 13.6123 48.7173 13.6123C50.4373 18.1312 49.3573 21.4675 49.0373 22.2967C51.0773 24.5923 52.3173 27.5196 52.3173 31.1008C52.3173 43.7058 44.8373 46.48 37.7173 47.2869C38.8373 48.272 39.8773 50.2838 39.8773 53.3585C39.8773 57.7494 39.8373 61.2777 39.8373 62.3434C39.8373 63.2032 40.3973 64.23 42.0373 63.9017C54.84 59.5942 64 47.2897 64 32.812C64 14.692 49.672 0 32 0Z" fill="#FF737D"/>
+                    </svg>
+                    
+            </a>        
+        </aside>
+        <div class="container">
+            <img src="icons/logo-akutanova.svg" alt="" class="promo__logo">
+            <div class="under_title promo__und">Меня зовут Анна Кутанова</div>
+            <h1 class="promo__title">Я web-разработчик из города Москва</h1>
+            <div class="promo__links">
+                <a href="#" class="btn btn_portfolio">Портфолио</a>
+                <a href="#" class="btn btn_about">Про меня</a>
+            </div>
+            <div class="promo__social">
+                <a href="#" class="promo__soclinks promo__soclinks_telegr soc_links"><img src="icons/telegram-icon.svg" alt=""></a>
+                <a href="#" class="promo__soclinks promo__soclinks_git soc_links"><img src="icons/instagram-icon.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__photo"><img src="images/aboutme.png" alt=""></div>
+                <div class="about__descr">
+                    <div class="under_title">Про меня</div>
+                    <h2 class="title">Меня зовут Кутанова Анна</h2>
+                    <div class="about__text">
+                        <p>Уже более 7 лет я занимаюсь Front-End разработкой. Создаю сайты "под ключ" с учетом SEO-оптимизации и современных подходов к разработке. Обучаю разработке взрослых и детей на своих курсах. В моей копилке сайты, созданные на различных CMS-платформах, а также на чистом HTML в связке с JavaScript. </p>
+                        <p>Верстаю сайты на основе готовых макетов, предоставленных заказчиком, или создаю дизайн "с нуля" на основе брифа заказчика. Все сайты имеют адаптивность под различные устройства и типы экранов.</p>
+                        <p>Со мной вы получите современный удобный сайт, на который с радостью будут приходить ваши клиенты.</p>
+                    </div>
+                </div>
+                <div class="about__services">
+                    <div class="about__item">
+                        <div class="about__icon">
+                            <img src="icons/webdev-icon.svg" alt="web">
+                        </div>
+                        <div>
+                            <div class="items_title">Web-разработка</div>
+                            <div class="about__item__descr">Создам сайт под ваши задачи любого уровня сложности. Это может быть как простой лендинг, так и интернет-магазин со сложной структурой.</div>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__icon">
+                            <img src="icons/design-icon.svg" alt="Дизайн">
+                        </div>
+                        <div>
+                            <div class="items_title">UI/UX Design</div>
+                            <div class="about__item__descr">Разработаю прототип и дизайн сайта на основе вашего фирменного стиля.<br>Еще нет своего стиля? Тогда помогу определиться на основе ваших предпочтений.</div>
+                        </div>                    
+                    </div>
+                    <div class="about__item">
+                        <div class="about__icon">
+                            <img src="icons/anime-icon.svg" alt="Анимация">
+                        </div>
+                        <div>
+                            <div class="items_title">Анимация на сайте</div>
+                            <div class="about__item__descr">Ненавязчивая анимация улучшает пользовательсвие качества сайта в глазах поисковиков. Поэтому добавляю анимацию для элементов сайта там, где это уместно.</div>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__icon">
+                            <img src="icons/target-icon.svg" alt="Реклама в FB">
+                        </div>
+                        <div>
+                            <div class="items_title">Таргет в FB и Instagram</div>
+                            <div class="about__item__descr">Для того, чтобы сайт приносил доход, нужны посетители. Настрою рекламу вашего бизнеса в самой “умной” социальной сети.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="usage">
+        <div class="container">
+            <div class="under_title">Опыт</div>
+            <h2 class="title">Чем я буду полезна</h2>
+            <h3 class="title">Опыт работы</h3>
+            <div class="usage__wrapper">
+                <div class="usage__column">  
+                    <div class="usage__circle"></div>              
+                    <ul>
+                        <li>
+                            <div class="usage__item">
+                                <div class="usage__item-head">
+                                    <div class="circle-icon">
+                                        <img src="icons/developer-icon.svg" alt="">
+                                    </div>
+                                    <div class="items_title">WEB-разработчик в WordPress</div>
+                                </div>
+                                <div class="usage__item-text">
+                                    Разработка сайтов на основе CMS WordPress. Создание от простых лендингов до корпоративных проектов. Индивидуальный дизайн и кастомизация под каждый сайт. Создание собственных типов записей и работа с ACF-полями.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="usage__column">  
+                    <div class="usage__circle"></div>               
+                    <ul>
+                        <li>
+                            <div class="usage__item">
+                                <div class="usage__item-head">
+                                    <div class="circle-icon">
+                                        <img src="icons/developer-icon.svg" alt="">
+                                    </div>
+                                    <div class="items_title">WEB-разработчик в WordPress</div>
+                                </div>
+                                <div class="usage__item-text">
+                                    Разработка сайтов на основе CMS WordPress. Создание от простых лендингов до корпоративных проектов. Индивидуальный дизайн и кастомизация под каждый сайт. Создание собственных типов записей и работа с ACF-полями.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+.btn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 12px 25px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 1s;
+    &_portfolio {
+        color: #fff;
+        background-color: $maincolor;
+        &:hover {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+    }
+    &_about {
+        margin-left: 20px;
+        &:hover {
+            letter-spacing: 2px;
+        }
+    }
+}

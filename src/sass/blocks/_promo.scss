@@ -1,0 +1,36 @@
+.promo {
+    height: 100vh;
+    position: relative;
+    background: #FAE2E2 url("../images/itsme.png") 80% 100%/contain no-repeat;
+    padding: 60px 80px;
+    &__logo {
+        max-width: 300px;
+    }
+    &__und {
+        margin-top: 100px;
+    }
+    &__links {
+        margin-top: 45px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+    }
+    &__title {
+        color: #490b37;
+        text-transform: uppercase;
+        margin-top: 9px;
+        max-width: 530px;
+        font-weight: 600;
+    }
+    &__soclinks {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        &_telegr {
+            top: calc(50% - 100px);
+            left: calc(50% + 100px);;
+        }
+    }
+
+}

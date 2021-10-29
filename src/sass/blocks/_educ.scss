@@ -1,0 +1,30 @@
+.educ {
+    margin-top: 50px;
+    padding: 60px 0;
+    background-color: $maincolor;
+    color: #fff;
+    .usage__wrapper {
+        margin-top: 25px;
+        padding: 0 50px 0 67px;
+    }
+    h3.title {
+        margin-top: 18px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+    }
+    .usage__column .items_title {
+        color: #fff;
+        white-space: normal;
+    }
+    .usage__item-head::before, .usage__column ul li::after {
+    
+            background-color: #fff;
+    
+    }
+    img {
+        position: relative;
+        z-index: 10;
+    }
+}

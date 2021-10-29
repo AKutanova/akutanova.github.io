@@ -1,0 +1,29 @@
+.price {
+    @include center_blocks;
+    padding: 60px 0 90px 0;
+    &__list {
+        width: 370px;
+    }
+    &__title {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__descr {
+        margin-top: 5px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    li {
+        list-style-type: none;
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: -27px;
+            top: 3px;
+            @include smallcircle;
+        }
+    }
+}

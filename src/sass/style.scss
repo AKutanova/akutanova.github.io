@@ -16,6 +16,10 @@
     margin: 0 auto;
 }
 
+h2.title {
+    font-weight: 600;
+}
+
 .under_title, .items_title {
     font-weight: 700;
     color: #121212;
@@ -46,10 +50,11 @@ h2.title::after {
 .circle-icon {
     position: relative;
     width: 42px;
-    text-align: right;
+    padding-left: 16px;
     @include before_circle;
     &::before {
         top: -14px;
+        z-index: 1;
     }
 }
 
@@ -60,3 +65,8 @@ h2.title::after {
 @import "blocks/menu";
 @import "blocks/about";
 @import "blocks/usage";
+@import "blocks/educ";
+@import "blocks/skills";
+@import "blocks/portfolio";
+@import "blocks/price";
+@import "blocks/contact";

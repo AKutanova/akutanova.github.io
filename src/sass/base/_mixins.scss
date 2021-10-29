@@ -11,3 +11,21 @@
         z-index: -1;
     }
 }
+
+@mixin center_blocks {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2.title::after {
+            margin: 15px auto;
+        }
+    }
+}
+
+@mixin smallcircle {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: $secondcolor;
+}

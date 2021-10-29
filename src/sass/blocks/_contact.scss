@@ -1,0 +1,32 @@
+.contact {
+    @include center_blocks;
+    padding: 60px 0 90px 0;
+    background: url('../images/footer-about.png') 50% 50%/cover no-repeat;
+    color: #fff;
+    .under_title {
+        color: #fff;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 585px;
+        input[type='text'], textarea {
+            margin: 13px;
+            width: 100%;
+            padding: 14px 15px;
+            border-radius: 3px;
+            border: none;
+            font-size: 13px;
+            color: #1A1918;
+            outline-color: $maincolor;
+        }
+        input[type='text'] {
+            height: 45px;
+        }
+    }
+    &__label {
+        text-align: center;
+    }
+}

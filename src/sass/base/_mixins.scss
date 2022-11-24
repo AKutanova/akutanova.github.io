@@ -12,6 +12,14 @@
     }
 }
 
+@mixin before_circle_light {
+    @include before_circle;
+    &::before {
+        background-color: $secondlite;
+
+    }
+}
+
 @mixin center_blocks {
     .container {
         display: flex;

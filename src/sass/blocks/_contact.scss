@@ -6,6 +6,9 @@
     .under_title {
         color: #fff;
     }
+    &__wrapper {
+        margin-top: 35px;
+    }
     &__form {
         display: flex;
         flex-direction: column;
@@ -25,8 +28,45 @@
         input[type='text'] {
             height: 45px;
         }
+        textarea {
+            resize: none;
+        }
+        input[type='submit'] {
+            margin-top: 15px;
+        }
     }
     &__label {
         text-align: center;
+    }
+    &__socio {
+        display: flex;
+        a {
+            margin: 0 15px;
+            width: 62px;
+            display: block;
+        }
+    }
+    h2.title::after {
+        background-color: #fff;
+    }
+    a.soc_links img {
+        background-color: #fff;
+        border-radius: 100%;
+        border: none;
+        width: 100%;
+        height: 100%;
+        object-fit: none;
+    }
+    &__policy {
+        display: flex;
+        align-items: center;
+        a {
+            color: #c4dcff;
+        }
+    }
+
+    input[type="checkbox"] {
+        width: 35px;
+        height: 15px;
     }
 }

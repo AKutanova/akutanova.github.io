@@ -3,6 +3,13 @@
     padding: 60px 0;
     background-color: $maincolor;
     color: #fff;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .usage__wrapper {
         margin-top: 25px;
         padding: 0 50px 0 67px;
@@ -17,6 +24,7 @@
     .usage__column .items_title {
         color: #fff;
         white-space: normal;
+        line-height: 21px;
     }
     .usage__item-head::before, .usage__column ul li::after {
     
@@ -26,5 +34,10 @@
     img {
         position: relative;
         z-index: 10;
+    }
+    &__undertitle {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 300;
     }
 }

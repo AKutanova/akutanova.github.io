@@ -1,5 +1,6 @@
 .promo {
     height: 100vh;
+    min-height: 500px;
     position: relative;
     background: #FAE2E2 url("../images/itsme.png") 80% 100%/contain no-repeat;
     padding: 60px 80px;
@@ -27,6 +28,19 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        background-color: white;
+        border-radius: 100%;
+        border-right: 0.1rem dashed;
+        width: 65px;
+        height: 62px;
+        transition: transform 0.5s;
+
+        &:hover {
+            @media (min-width: 768px) {
+                transform: translate(3px, -3px);                  
+            }
+        }
+
         &_telegr {
             top: calc(50% - 100px);
             left: calc(50% + 100px);;

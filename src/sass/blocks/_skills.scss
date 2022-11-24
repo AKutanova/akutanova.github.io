@@ -1,6 +1,6 @@
 .skills {
     @include center_blocks;
-    padding: 90px 0;
+    padding: 90px 0 0 0;
     &__wrapper {
         display: grid;
         // grid-template-columns: repeat(4, 270px);
@@ -9,7 +9,7 @@
         grid-template-columns: repeat(auto-fit, minmax(270px, auto));
         grid-template-rows: repeat(2, 1fr);
         grid-auto-rows: 1fr;
-        gap: 13px 40px;
+        gap: 13px 15px;
         margin-top: 30px;
     }
     &__item {
@@ -30,5 +30,40 @@
     &__icon {
         height: 70px;
         display: flex;
+    }
+    &__rating {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(280px, 350px));
+        grid-template-rows: repeat(auto-fit, 70px);
+        grid-auto-rows: 1fr;
+        gap: 30px 45px;
+        font-size: 14px;
+        font-weight: 300;
+        .under_title {
+            font-size: 14px;
+            @include before_circle_light;
+        }
+        &__linewrapper {
+            height: 14px;
+            width: 100%;
+            background: #E8E4DE;
+            border-radius: 4px;
+            grid-column: 1/3;
+        }
+        &__line {
+            height: 14px;
+            width: 50%;
+            border-radius: 4px;
+            background-color: $maincolor;
+        }
+        &__item {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: 38px 14px;
+            gap: 20px 0;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }

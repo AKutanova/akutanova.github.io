@@ -10,6 +10,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    min-width: 320px;
+}
 
 .container {
     max-width: 1140px;
@@ -51,7 +54,7 @@ h2.title::after {
     position: relative;
     width: 42px;
     padding-left: 16px;
-    @include before_circle;
+    @include before_circle_light;
     &::before {
         top: -14px;
         z-index: 1;
@@ -70,3 +73,5 @@ h2.title::after {
 @import "blocks/portfolio";
 @import "blocks/price";
 @import "blocks/contact";
+@import "blocks/media";
+@import "blocks/modal";

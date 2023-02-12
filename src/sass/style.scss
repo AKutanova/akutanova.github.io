@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "libs/bootstrap-reboot.min";
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&display=swap');
 
@@ -75,3 +76,82 @@ h2.title::after {
 @import "blocks/contact";
 @import "blocks/media";
 @import "blocks/modal";
+=======
+@import "libs/bootstrap-reboot.min";
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&display=swap');
+
+@import "base/variables";
+@import "base/mixins";
+
+* {
+    font-family: 'Commissioner', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-width: 320px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h2.title {
+    font-weight: 600;
+}
+
+.under_title, .items_title {
+    font-weight: 700;
+    color: #121212;
+    z-index: 2;
+}
+
+.under_title {
+    font-size: 16px;
+    line-height: 36px;
+    padding-left: 10px;
+    position: relative;
+    @include before_circle;
+}
+
+.items_title {
+    line-height: 16px;
+}
+
+h2.title::after {
+    display: block;
+    width: 60px;
+    height: 3px;
+    content: "";
+    background-color: $maincolor;
+    margin-top: 15px;
+}
+
+.circle-icon {
+    position: relative;
+    width: 42px;
+    padding-left: 16px;
+    @include before_circle_light;
+    &::before {
+        top: -14px;
+        z-index: 1;
+    }
+}
+
+
+@import "blocks/promo";
+@import "blocks/btn";
+@import "blocks/socpanel";
+@import "blocks/menu";
+@import "blocks/about";
+@import "blocks/usage";
+@import "blocks/educ";
+@import "blocks/skills";
+@import "blocks/portfolio";
+@import "blocks/price";
+@import "blocks/contact";
+@import "blocks/media";
+@import "blocks/modal";
+>>>>>>> fd8a19628233d2fcd18215914b635ccf9c6dbed0

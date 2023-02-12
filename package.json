@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AKutanova/newproject.git"
+    "url": "git+https://github.com/AKutanova/akutanova.github.io"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AKutanova/newproject/issues"
+    "url": "https://github.com/AKutanova/akutanova.github.io/issues"
   },
-  "homepage": "https://github.com/AKutanova/newproject#readme",
+  "homepage": "https://akutanova.github.io",
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",

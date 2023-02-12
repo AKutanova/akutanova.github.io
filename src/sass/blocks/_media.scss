@@ -37,7 +37,7 @@
     }
     .portfolio{
         &__works {
-            grid-template-columns: repeat(4, 240px);
+            grid-template-columns: repeat(4, 235px);
             grid-template-rows: repeat(2, 240px);
         }
     }
@@ -75,7 +75,7 @@
     }
     .portfolio{
         &__works {
-            grid-template-columns: repeat(3, minmax(240px, auto));
+            grid-template-columns: repeat(3, minmax(234px, auto));
             grid-template-rows: repeat(auto-fit, 270px);
             justify-content: center;
             grid-auto-rows: 270px;
@@ -159,7 +159,7 @@
     .portfolio{
         &__works {
             margin-top: 30px;
-            grid-template-columns: repeat(2, minmax(45%, auto));
+            grid-template-columns: repeat(2, minmax(49%, auto));
         }
     }
     .contact {
@@ -239,7 +239,6 @@
     }
     .about {
         &__photo {
-            // row-gap: 20px;
             margin: 0 -15px;
         }
         &__services {
@@ -251,7 +250,7 @@
     }
     .portfolio{
         &__works {
-            grid-template-columns: 90%;
+            grid-template-columns: 100%;
         }
     } 
     .price {

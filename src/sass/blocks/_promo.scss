@@ -33,6 +33,14 @@
         border-right: 0.1rem dashed;
         width: 65px;
         height: 62px;
+        transition: transform 0.5s;
+
+        &:hover {
+            @media (min-width: 768px) {
+                transform: translate(3px, -3px);                  
+            }
+        }
+
         &_telegr {
             top: calc(50% - 100px);
             left: calc(50% + 100px);;
